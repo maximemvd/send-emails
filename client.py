@@ -107,7 +107,7 @@ def get_mails(username):
     if not server_response.get("status"):
         print("\n" + server_response.get("message"))
         return False
-    return server_response.get("mailList")
+    return server_response.get("mail_list")
 
 
 def show_mail(content):

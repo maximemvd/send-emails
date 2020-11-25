@@ -64,5 +64,5 @@ def create_MIME_File(file_path):
         return Parser().parse(file)
 
 
-def getSubjectOfMail(msg):
+def get_subject_of_mail(msg):
     return msg["Subject"]
