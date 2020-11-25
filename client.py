@@ -12,17 +12,17 @@ def get_parser():
 
 
 def show_login_menu():
-    print( "Menu de connexion\n" )
-    print( "1. Creer un compte\n" )
-    print( "2. Se connecter" )
+    print( "\nMenu de connexion" )
+    print( "1. Creer un compte " )
+    print( "2. Se connecter ")
 
 
 def show_main_menu():
-    print( "Menu principal\n" )
-    print( "1. Consultation de courriels\n" )
-    print( "2. Envoi de courriel\n" )
-    print( "3. Statistiques\n" )
-    print( "4. Quitter" )
+    print("\nMenu principal " )
+    print( "1. Consultation de courriels " )
+    print( "2. Envoi de courriel " )
+    print( "3. Statistiques " )
+    print( "4. Quitter " )
 
 
 def get_username():
@@ -57,6 +57,7 @@ def login():
     message = str(infos)
     send_message_to_server(message)
     return username
+
 
 def get_login_command():
     command_successful = False
@@ -168,8 +169,8 @@ def get_stats(username):
 
 def show_stats(stats):
     username = stats.get( "username" )
-    nb_mails = stats.get( "nb_mails" )
-    directory_size = stats.get( "directory_size" )
+    nb_mails = stats.get( "nbr_mails" )
+    directory_size = stats.get( "size_directory" )
     mail_list = stats.get( "mail_list" )
 
     print( '\n' + f"--------- Information de l'utilisateur {username} ---------\n" )
