@@ -6,9 +6,9 @@ import util
 
 def get_parser():
     parser = optparse.OptionParser()
-    parser.add_option( "-p", "--port", dest="port", type=int, default=1400,
-                       help="Port pour écouter et envoyer des messages" )
-    return parser.parse_args( sys.argv[1:] )[0]
+    parser.add_option("-p", "--port", dest="port", type=int, default=1400,
+                       help="Port pour écouter et envoyer des messages")
+    return parser.parse_args(sys.argv[1:])[0]
 
 
 def show_login_menu():

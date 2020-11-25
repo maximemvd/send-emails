@@ -59,8 +59,8 @@ def get_files_directory(directory):
     return fileList
 
 
-def create_MIME_File(filePath):
-    with open(filePath, "r") as file:
+def create_MIME_File(file_path):
+    with open(file_path, "r") as file:
         return Parser().parse(file)
 
 
